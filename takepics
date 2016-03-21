@@ -1,0 +1,12 @@
+#!/bin/bash
+
+/opt/vc/bin/vcgencmd measure_temp
+
+timestamp=`date +%F_%H-%M-%S`
+echo $timestamp
+
+tag=".jpg"
+timetag=$timestamp$tag
+echo $timetag
+
+fswebcam -r 1280x720 $timetag

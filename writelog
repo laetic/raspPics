@@ -1,0 +1,7 @@
+#!/bin/bash
+
+timestamp='date +%F_%H-%M%S'
+
+echo "Picture Log - $(date)" >/home/pi/logs/picturelog$timestamp.txt
+while :
+do
